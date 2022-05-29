@@ -14,4 +14,10 @@ fn() main {
 
 ## Building a project
 
-- `cargo init`
+- Create new project: `cargo init`
+- Compile and run: `cargo run`
+  - compiles into `./target/debug/[project-name]`
+    - In this case: `./target/debug/traversy-rust`
+    - You can then also run the code in this manner:
+      - `./target/debug/[project-name]` `./target/debug/traversy-rust`
+
