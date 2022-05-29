@@ -3,7 +3,14 @@
 use std::mem;
 
 pub fn run() {
-  let numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
+  let mut numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
+
+  // Re-assign value
+  numbers[2] = 20;
+
+  // Add on to vector
+  numbers.push(5);
+  numbers.push(5);
 
   println!("{:?}", numbers);
 

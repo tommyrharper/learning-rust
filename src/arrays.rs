@@ -3,7 +3,10 @@
 use std::mem;
 
 pub fn run() {
-  let numbers: [i32; 5] = [1, 2, 3, 4, 5];
+  let mut numbers: [i32; 5] = [1, 2, 3, 4, 5];
+
+  // Re-assign value
+  numbers[2] = 20;
 
   println!("{:?}", numbers);
 
