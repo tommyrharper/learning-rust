@@ -1,5 +1,14 @@
 pub fn run() {
+  // Basic formatting
   println!("Hello from the print.rs file! {} {}", 1, "interpolated");
 
-  println!("{0} is from {1} and {0} likes to {2}", "Tom", "London", "code")
+  // Positional arguments
+  println!("{0} is from {1} and {0} likes to {2}", "Tom", "London", "code");
+
+  // Named arguments
+  println!("{subject} {verb} {object}",
+    object = "the lazy dog",
+    subject = "the quick brown fox",
+    verb = "jumps over"
+  );
 }
