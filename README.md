@@ -12,3 +12,6 @@ fn() main {
 - Run: `./hello`
 
 
+## Building a project
+
+- `cargo init`
