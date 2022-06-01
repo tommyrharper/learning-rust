@@ -34,4 +34,11 @@ pub fn run() {
   for x in numbers.iter() {
     println!("Number: {}", x);
   }
+
+  // Loop & mutate values
+  for x in numbers.iter_mut() {
+    *x *= 2;
+  }
+
+  println!("Numbers Vec: {:?}", numbers);
 }
