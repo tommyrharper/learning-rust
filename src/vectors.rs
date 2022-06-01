@@ -3,7 +3,7 @@
 use std::mem;
 
 pub fn run() {
-  let mut numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
+  let mut numbers: Vec<i32> = vec![1, 2, 3, 4];
 
   // Re-assign value
   numbers[2] = 20;
@@ -11,6 +11,9 @@ pub fn run() {
   // Add on to vector
   numbers.push(5);
   numbers.push(5);
+
+  // Pop off last value
+  numbers.pop();
 
   println!("{:?}", numbers);
 
@@ -26,4 +29,9 @@ pub fn run() {
   // Get slice
   let slice: &[i32] = &numbers[1..3];
   println!("Slice: {:?}", slice);
+
+  //  Loop through vector values
+  for x in numbers.iter() {
+    println!("Number: {}", x);
+  }
 }
