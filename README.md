@@ -1,5 +1,13 @@
 # Rust Tutorial
 
+## Basic commands
+
+```bash
+rustc --verion # rust version
+rustup --version # toolchain manager version
+cargo --version # package manager for rust
+```
+
 ## Hello World
 
 ```rust
